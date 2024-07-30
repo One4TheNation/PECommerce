@@ -48,6 +48,11 @@ router.get('/:id', async (req, res) => {
       res.status(404).json({ message: 'Not found!' });
       return;
     }
+
+    res.status(200).json(tagData);
+  } catch (err) {
+    console.log(err);
+    res.status(500)
   }
 });
 //---------------------------------------
