@@ -3,7 +3,7 @@ Helping Understand how retail e-commerce works behind the scene
 
 ## 13 Object-Relational Mapping (ORM): E-Commerce Back End
 
-![Project Preview](./)
+![Project Preview](./Assets/Screen%20Shot%202024-07-30%20at%2010.47.01%20PM.png)
 
 ## Table of Contents
 * [License](#license)

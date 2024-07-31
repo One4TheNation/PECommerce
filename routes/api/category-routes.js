@@ -9,13 +9,6 @@ router.get('/', async (req, res) => {
   try {
     const categoryData = await Category.findAll({
       include: [{ model: Product }],
-      attributes: {
-        include: [
-          [
-            sequelize.literal(),
-          ],
-        ],
-      },
     })
     res.status(200).json(categoryData);
   } catch (err) {
@@ -32,14 +25,6 @@ router.get('/:id', async (req, res) => {
       include: [
         {
           model: Product,
-          attributes: [
-            'id',
-          ],
-          include: [
-            [
-              sequelize.literal(),
-            ],
-          ],
         },
       ],
     });
@@ -72,7 +57,7 @@ router.post('/', async (req, res) => {
 router.put('/:id', async (req, res) => {
   // update a category by its `id` value
   try {
-    const categoryData = await User.update(req.body, {
+    const categoryData = await Category.update(req.body, {
       where: {
         id: req.params.id,
       },
