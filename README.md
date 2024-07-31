@@ -5,6 +5,8 @@ Helping Understand how retail e-commerce works behind the scene
 
 ![Project Preview](./Assets/Screen%20Shot%202024-07-30%20at%2010.47.01%20PM.png)
 
+[Link](https://drive.google.com/file/d/1DxbyPKLMvpVn-fVtsvlZQinifrw_5V_J/view?usp=sharing)
+
 ## Table of Contents
 * [License](#license)
 * [Description](#description)
