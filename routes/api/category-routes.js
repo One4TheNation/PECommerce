@@ -51,7 +51,7 @@ router.get('/:id', async (req, res) => {
 
     res.status(200).json(categoryData);
   } catch (err) {
-    res.status(500).json({ message: 'Server' })
+    res.status(500).json({ message: 'Show Your ID' })
   }
   // be sure to include its associated Products
 });
@@ -84,7 +84,7 @@ router.put('/:id', async (req, res) => {
 
     res.status(200).json(categoryData);
   } catch (err) {
-    res.status(500).json({ message: 'Server' })
+    res.status(500).json({ message: 'Server!' })
   }
 });
 //---------------------------------------
@@ -99,7 +99,7 @@ router.delete('/:id', async (req, res) => {
     });
 
     if (!categoryData) {
-      res.status(404).json({ message: 'Deleted & Gone' });
+      res.status(404).json({ message: 'Deleted & Gone!' });
     }
 
     res.status(200).json(categoryData);
